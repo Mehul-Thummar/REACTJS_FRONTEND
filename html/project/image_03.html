@@ -1,62 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+    <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"> 
         <style>
-                table {
-                        width: 500px;
-                        height: 100px;
+            table{
+                width: 100%;
+            }
+            table, th, td{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
 
-                }
-
-                table,
-                th,
-                td {
-                        border: 1px solid red;
-                        border-collapse: collapse;
-                }
-
-                header {
-                        height: 50px;
-                }
-
-                footer {
-                        height: 30px;
-                }
         </style>
-</head>
-
-<body>
+    </head>
+    <body>
         <table>
-                <tr>
-                        <th colspan="2">
-                                <header>
-                                        <center>layout header - top Navigation</center>
-                                </header>
-                        </th>
-                </tr>
-                <tr>
-                        <td width="50%">
-                                <table><td width="30px">cell</td></table>
-                        </td>
-                        <td width="50%">
-                                <aside>
-                                        <img src="" alt="img">
-                                </aside>
-                        </td>
-                </tr>
-                <tr>
-                        <td colspan="2">
-                                <footer>
-                                        <center>Bottom Navigation | Copyright</center>
-                                </footer>
-                        </td>
-                </tr>
+            <tr>
+                <th colspan="3" >layout header - top navigation</th>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <table>
+                        <tr>
+                            <th> Link 1</th>
+                        </tr>
+                        <tr>
+                            <th>Link 2</th>
+                        </tr>
+                        <tr>
+                            <th>Link 3</th>
+                        </tr>
+                        <tr>
+                            <th>Link 4</th>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>H1 tag - header line</th>                      
+                        </tr>
+                    </table ><br>
+                    <center><img src="photo_03.jpg" alt="" height="150" width="200"</<center>
+                    <p>Page content will appear here wed Training Room </p>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3">Bottom navigation | Copyright</th>
+            </tr>
         </table>
-
-</body>
-
+    </body>
 </html>
