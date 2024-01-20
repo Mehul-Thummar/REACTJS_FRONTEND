@@ -71,11 +71,26 @@ body{
 /* css verticle alignment */
 
 
+/* p{
+    width: 60%;
+    font-size: 45px;
+        border-top:1px solid black;
+        border-bottom:1px solid black
+}
+img{
+    vertical-align:top;
+} */
+
+
 
 /* css white space */
 
-
-
-
+/* p{
+    white-space:nowrap;
+} */
 
 /* css visibility */
+/* 
+p{
+    visibility: hidden;
+} */
