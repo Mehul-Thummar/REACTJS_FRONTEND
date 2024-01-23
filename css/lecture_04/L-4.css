@@ -52,17 +52,17 @@ body{
 
 
 .para-2 p{
-    /* background-color: red; */
-    /* color:transparent; */
-    /* text-align: justify; */
-    /* text-decoration:wavy underline red; */
-    /* text-transform: lowercase; */
-    /* text-indent: 200px; */
-    /* letter-spacing: 50px; */
-    /* word-spacing: 100px; */
-    /* direction: rtl; */
-    /* unicode-bidi: bidi-override; */
-    /* text-shadow:-10px 10px 10px gray; */
+    /* background-color: red;
+    color:transparent;
+    text-align: justify;
+    text-decoration:wavy underline red;
+    text-transform: lowercase;
+    text-indent: 200px;
+    letter-spacing: 50px;
+    word-spacing: 100px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-shadow:-10px 10px 10px gray; */
 }
 
 

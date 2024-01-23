@@ -1,0 +1,108 @@
+/* css width / height */
+
+/* .box{
+    height: auto;
+    min-width: 400px;
+    border:2px solid black;
+}
+
+img{
+    height: auto;
+    min-width: 500px;
+} */
+
+
+/* listing tag and table tag in css */
+
+
+/* listing tag */
+
+
+/*
+    list-style-type
+    list-style-position
+    list-style-image
+*/
+
+ol{
+    /* list-style-type:decimal; */
+    /* list-style-position: inside; */
+    /* list-style-image: url('../image/car.png'); */
+}
+
+
+
+/* unorder list */
+
+ul{
+    /* list-style-type: decimal; */
+}
+
+/* css box-shadow */
+
+.shadow{
+    height: 200px;
+    width: 200px;
+    border:2px solid black;
+    margin: 50px;
+    box-shadow: inset -10px -10px 10px gray , 20px 20px 2px red;
+}
+
+
+
+/* accent-color*/
+
+
+/* 
+     disabled
+     enabled(defult)
+    ::placeholder
+    :checked
+    :focus
+    :hover
+    :required
+    :invalid
+    :valid 
+    ::marker
+
+*/
+
+/* input:invalid{
+    border:3px solid red;
+}
+input:valid{
+    border:3px solid green;
+}
+
+ol li::marker{
+    color:red;
+}
+ul li::marker{
+    color:red;
+}
+
+:read-write{
+    color:blue;
+}
+
+.box:lang(EN){
+    color:purple
+} */
+
+/*
+    :read-only
+    :read-write
+    :root
+    :lang()
+
+*/
+/* :root{
+    --color:red;
+    --color:green;
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: var(--color);
+} */
