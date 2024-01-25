@@ -13,7 +13,7 @@ h1:nth-child(6) {
     background-color: yellow;
 }
 
-:nth-last-child(16){
+:nth-last-child(16) {
     color: red;
     background-color: yellow;
 }
@@ -23,7 +23,7 @@ div :nth-of-type() {
     background-color: yellow;
 }
 
-p:last-child{
+p:last-child {
     color: red;
     background-color: yellow;
 }
@@ -58,14 +58,41 @@ h1:nth-child(19) {
     background-color: yellow;
 }
 
-
-h1:nth-last-child(22){
+h1:nth-last-child(22) {
     color: red;
     background-color: yellow;
 }
 
-div:nth-last-child(14){
+div:nth-last-child(14) {
     color: red;
     background-color: yellow;
 }
 
+div:nth-of-type(2) h1:nth-child(2){
+    color: red;
+    background-color: yellow;
+}
+
+span:nth-of-type(1) h1:nth-of-type(5){
+    color: red;
+    background-color: yellow;
+}
+
+div:nth-of-type(4) h1:nth-last-child(2){
+    color: red;
+    background-color: yellow;
+}
+
+div:nth-of-type(4) h1:nth-last-child(2){
+    color: red;
+    background-color: yellow;
+}
+
+div:nth-last-of-type(2) h1:last-child{
+    color: red;
+    background-color: yellow;
+}
+section h1:last-child{
+    color: red;
+    background-color: yellow;
+}
