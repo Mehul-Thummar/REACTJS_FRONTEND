@@ -1,8 +1,7 @@
-a:first-child {
+a:nth-child(1) {
     color: red;
     background-color: yellow;
 }
-
 
 a:nth-child(4) {
     color: red;
@@ -14,17 +13,7 @@ h1:nth-child(6) {
     background-color: yellow;
 }
 
-input:first-of-type {
-    color: red;
-    background-color: yellow;
-}
-
-section div h1:nth-child(2) {
-    color: red;
-    background-color: yellow;
-}
-
-section div h1:nth-child(1) {
+:nth-last-child(16){
     color: red;
     background-color: yellow;
 }
@@ -34,7 +23,7 @@ div :nth-of-type() {
     background-color: yellow;
 }
 
-span p:last-of-type {
+p:last-child{
     color: red;
     background-color: yellow;
 }
@@ -69,18 +58,14 @@ h1:nth-child(19) {
     background-color: yellow;
 }
 
-section h1:last-child {
+
+h1:nth-last-child(22){
     color: red;
     background-color: yellow;
 }
 
-
-div h1:first-child {
+div:nth-last-child(14){
     color: red;
     background-color: yellow;
 }
 
-{
-    color: red;
-    background-color: yellow;
-}
