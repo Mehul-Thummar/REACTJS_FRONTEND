@@ -68,31 +68,32 @@ div:nth-last-child(14) {
     background-color: yellow;
 }
 
-div:nth-of-type(2) h1:nth-child(2){
+div:nth-of-type(2) h1:nth-child(2) {
     color: red;
     background-color: yellow;
 }
 
-span:nth-of-type(1) h1:nth-of-type(5){
+span:nth-of-type(1) h1:nth-of-type(5) {
     color: red;
     background-color: yellow;
 }
 
-div:nth-of-type(4) h1:nth-last-child(2){
+div:nth-of-type(4) h1:nth-last-child(2) {
     color: red;
     background-color: yellow;
 }
 
-div:nth-of-type(4) h1:nth-last-child(2){
+div:nth-of-type(4) h1:nth-last-child(2) {
     color: red;
     background-color: yellow;
 }
 
-div:nth-last-of-type(2) h1:last-child{
+div:nth-last-of-type(2) h1:last-child {
     color: red;
     background-color: yellow;
 }
-section h1:last-child{
+
+section h1:last-child {
     color: red;
     background-color: yellow;
 }
