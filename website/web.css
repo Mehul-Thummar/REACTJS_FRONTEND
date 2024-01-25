@@ -1,5 +1,42 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #5eb9f0;
+    text-decoration: none;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.h2{
+font-size: 50px;
+}
+.gs {
+    background-color: #5eb9f0;
+    text-decoration: none;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+    width: 110px;
+    border-radius: 50px 50px 50px 50px;
+}
+h1{
+    font-size: 20px;
 }

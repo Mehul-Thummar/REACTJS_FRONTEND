@@ -147,3 +147,32 @@
     box-shadow: 0px 5px 8px gray;
 }
 
+.shadow6 {
+    background-color: white;
+    border: 0;
+    padding: 10px 10px;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    box-shadow: 0px 0px 6px gray;
+}
+
+.shadow7 {
+    background-color: white;
+    border: 0;
+    padding: 10px 10px;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    box-shadow: 0px 5px 8px gray;
+}
+
+.shadow8 {
+    background-color: white;
+    border: 0;
+    padding: 10px 10px;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    box-shadow: 0px 10px 25px gray;
+}
