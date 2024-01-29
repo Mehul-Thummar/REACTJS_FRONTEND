@@ -15,16 +15,25 @@ header {
     height: 40px;
     width: 90px;
     border-radius: 50px 50px 50px 50px;
+
+}
+
+.navbar {
+    padding-top: 20px;
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding-right: 30px;
 }
-.h2{
-font-size: 50px;
+
+.h2 {
+    font-size: 50px;
 }
+
 .gs {
     background-color: #5eb9f0;
     text-decoration: none;
@@ -37,6 +46,11 @@ font-size: 50px;
     width: 110px;
     border-radius: 50px 50px 50px 50px;
 }
-h1{
+
+h1 {
     font-size: 20px;
+}
+
+.con3{
+    padding: 50px 50px;
 }
