@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+/* Css Position */
+
+
+/* .static{
+    position: static;
+} */
+
+/* .fixed{
+    height: 100px;
+    background-color: brown;
+    position: fixed ;
+    width: 100%;
+    bottom: 0;
+    top:0;
+    margin: auto;
+    z-index: 50;
+} */
+
+/* .stickey{
+    position: sticky;
+    height: 200px;
+    background-color: pink;
+    top:100px;
+    bottom: 0;
+} */
+
+
+.maindiv{
+    height: 650px;
+    width: 1200px;
+    border:2px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.box-1{
+    height: 50px;
+    width: 50px;
+    background-color: chartreuse;
+    position: absolute;
+    left:0
+}
+
+.box-2{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    position: absolute;
+    right:0
+}
+
+.box-3{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left:0
+
+}
+
+.box-4{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.box-5{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+}
+
+.box-6{
+    height: 50px;
+    width: 50px;
+    background-color:orange;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+}
+
+.box-7{
+    height: 50px;
+    width: 50px;
+    background-color:blueviolet;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.box-8{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}   
+
+.box-9{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+}
+
+
+/* Examples */
+
+/* .counter{
+    margin:100px 200px;
+    display: inline-block;
+    background-color: tomato;
+    padding: 20px 60px;
+    border-radius: 10px;
+    position: relative;
+}
+.counter a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+}
+
+.value{
+    position: absolute ;
+    top:-10px;
+    right: -10px;
+    background-color: blueviolet;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    text-align: center;
+    color:white;
+    border:1px solid white;
+} */
+
+
+
+
+/* Z-index Propeties */
+
+/* 
+.z-index-1{
+    height: 100px;
+    width: 500px;
+    background-color: green;
+    position: absolute;
+    z-index: -1;
+}
+
+.z-index-2{
+    height: 200px;
+    width: 400px;
+    background-color: orange;
+    position: absolute;
+    z-index: -3;
+}
+
+.z-index-3{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: absolute;
+    z-index: -4;
+} */
+
+
+ /* Float Properties */
+
+
+
+
+
+
+
+/* css clear properties */
+
+
+
+
+/* overflow properties */
+
+
+
+/* css cursor properties */
+
+/* .alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;} */
+
+
+/* css object-fit properties */
+
+/*  fill / contain / cover / scale-down / none */
+
+
+
+
+
