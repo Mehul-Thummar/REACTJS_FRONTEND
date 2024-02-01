@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv {
+    margin: 10px;
+    display: flex;
+}
+
+.a-1 h1 {
+    margin-left: 20px;
+}
+
+
+.a-1 p {
+    margin-left: 20px;
+}
+
+.a-1 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-2 h1 {
+    margin-left: 20px;
+}
+
+.a-2 p {
+    margin-left: 20px;
+}
+
+.a-2 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-3 h1 {
+    margin-left: 20px;
+}
+
+.a-3 p {
+    margin-left: 20px;
+}
+
+.a-3 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+
+.a-4 h1 {
+    margin-left: 20px;
+}
+
+.a-4 p {
+    margin-left: 20px;
+}
+
+.a-4 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-5 h1 {
+    margin-left: 20px;
+}
+
+.a-5 p {
+    margin-left: 20px;
+}
+
+.a-5 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-6 h1 {
+    margin-left: 20px;
+}
+
+.a-6 p {
+    margin-left: 20px;
+}
+
+.a-6 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-7 h1 {
+    margin-left: 20px;
+}
+
+.a-7 p {
+    margin-left: 20px;
+}
+
+.a-7 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-8 h1 {
+    margin-left: 20px;
+}
+
+.a-8 p {
+    margin-left: 20px;
+}
+
+.a-8 {
+    margin: 5px;
+    background-color: aqua;
+}

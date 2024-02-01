@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.d1 {
+    display: flex;
+    justify-content: flex-start;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.d2 {
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.d3 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.d4 {
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.d5 {
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.d6 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.box-1 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.box-2 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+.box-3 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+.box-4 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+.box-5 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}

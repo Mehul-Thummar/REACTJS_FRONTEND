@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv {
+    margin: 10px;
+}
+
+.a-1 h1 {
+    margin-left: 10px;
+}
+
+
+.a-1 p {
+    margin-left: 10px;
+}
+
+.a-1 {
+    margin: 5px;
+    background-color: aqua;
+}
+
+.a-2 h1 {
+    margin-left: 10px;
+}
+
+.a-2 p {
+    margin-left: 10px;
+}
+
+.a-2 {
+    margin: 5px;
+    text-align: start;
+    background-color: aqua;
+}
+
+.a-3 h1 {
+    margin-left: 10px;
+}
+
+.a-3 p {
+    margin-left: 10px;
+}
+
+.a-3 {
+    margin: 5px;
+    background-color: aqua;
+}
