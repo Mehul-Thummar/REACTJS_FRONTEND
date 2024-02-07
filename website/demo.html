@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -24,4 +24,30 @@
             </div> 
         </header>
     </body>
-</html>
+</html> -->
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: blue;
+    animation: rotate 4s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+      transform: rotateX(90deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(90deg) rotateY(90deg);
+    }
+    75% {
+      transform: rotateX(0deg) rotateY(90deg);
+    }
+    100% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+  }
+  

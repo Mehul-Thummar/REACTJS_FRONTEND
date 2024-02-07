@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #350264;
+    border-radius: 100%;
+    animation-name: circle;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes circle {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(200px);
+        border: 10px solid #c147c1;
+    }
+
+    100% {
+        transform: translate(400px);
+    }
+}

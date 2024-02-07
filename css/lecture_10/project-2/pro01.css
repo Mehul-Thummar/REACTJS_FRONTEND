@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mountain-img {
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud-1 {
+    height: 200px;
+    width: 400px;
+    animation-name: cloude-1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes cloude-1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(600px);
+    }
+
+    50% {
+        transform: translate(1200px);
+    }
+
+    75% {
+        transform: translate(600px);
+
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+
+}
+
+.cloud-2 {
+    height: 200px;
+    width: 400px;
+    animation-name: cloude-2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 590px;
+
+}
+
+@keyframes cloude-2 {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(-600px);
+    }
+
+    50% {
+        transform: translate(-1200px);
+    }
+
+    75% {
+        transform: translate(-600px);
+
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+
+}
+
+.sun {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    animation-name: sun;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    margin-left: 590px;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes sun {
+    0% {
+        transform: translateY(-0px);
+        background-color: lightyellow;
+    }
+
+    25% {
+        transform: translateY(200px);
+        background-color: yellow;
+    }
+
+    50% {
+        transform: translateY(400px);
+        background-color: orange;
+    }
+
+    75% {
+        transform: translateY(200px);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translateY(0px);
+        background-color: white;
+        overflow: hidden;
+    }
+
+}

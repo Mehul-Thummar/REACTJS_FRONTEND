@@ -102,19 +102,35 @@ body {
     justify-content: space-between;
 
 }
-.p3{
+
+.p3 {
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color:5eb9f0;
+    color: 5eb9f0;
     margin-top: 100px;
-    font-weight:bold;    
+    font-weight: bold;
 }
 
-.h2{
+.h2 {
     font-size: 40px;
     display: flex;
     justify-content: center;
     color: 343f52;
     text-align: center;
+}
+
+.count-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.aimg {
+    height: 200px;
+    width: 300px;
+}
+
+.arti {
+    align-items: center;
 }

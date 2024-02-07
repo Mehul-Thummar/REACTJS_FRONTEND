@@ -1,0 +1,694 @@
+body{
+    margin: 0;
+}
+
+/*
+    CSS TRANSFORM PROPERTIES
+    CSS TARNSITION PROPERTIES
+    CSS FILTER PROPERTIES
+    CSS ANIMATIONS
+*/
+
+/* Css 2D Transform - Examples */
+
+/* .transform{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin: 200px;
+  font-size: 35px;
+  color:white;
+} */
+
+.transform:hover{
+  transform: translate(200px);
+  /* transform: translate(-200px , -200px); */
+  /* transform: translateY(200px); */
+  /* transform:scale(0.5); */
+  /* transform: scaleY(3); */
+  /* transform: rotateY(-360deg); */
+  /* transform: skew(45deg , 90deg); */
+  /* transition: 3s; */
+}
+
+/* card Examples */
+
+/* .card{
+  margin: 100px;
+  height: fit-content;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  border:2px solid black;
+  overflow: hidden;
+}
+
+.img-div{
+  height: 300px;
+  overflow: hidden;
+}
+
+.card:hover img{
+  transform: scale(1.5);
+  transition: 2s;
+} */
+
+
+/* Css 3D Transform - Examples */
+
+/* .cover{
+    border: 2px solid red;
+    height: 400px;
+    width: 400px;
+    margin:200px 300px;
+}
+.cover:hover .content{
+    transform: perspective(600px) rotate3d(240 , 240 , 240 , 360deg);
+    transition: 2s;
+}
+.content{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+} */
+
+
+/* Css Transition - Examples */
+
+/* .box{
+  width: 900px;
+  height: 100px;
+  border:2px solid black;
+  overflow: hidden;
+} */
+
+/* .move{
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+} */
+
+.box:hover .move{  
+  /* width:200px; */
+  /* height: 200px; */
+  transition-duration: 5s;
+  transform: translate(800px);
+  /* transition: 4s 5s; */
+  /* transition-delay: 5s; */
+  /* transition-property: width height; */
+  transition-timing-function: ease-in-out;
+}
+
+
+
+
+
+
+
+
+/*******************************************************/
+
+
+/* Css Filter */
+
+    /* filter:blur(); */
+    /* filter:brightness(); */
+    /* filter:contrast(); */
+    /* filter:grayscale(); */
+    /* filter:hue-rotate(); */
+    /* filter:invert(); */
+    /* filter:saturate(); */
+    /* filter:opacity(); */
+    /* filter: sepia(); */
+    /* filter:none; */
+    /* filter:drop-shadow()*/
+
+
+/* Css Filter - Exampels */
+
+.maindiv{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.box-1{
+  height: 500px;
+  width: 500px;
+  background-color: brown;
+  object-fit: cover;
+  /* filter:blur(20px) */
+  /* filter:brightness(1000%) */
+  /* filter:saturate(1000%); */
+  /* filter:contrast(500%) */
+  /* filter:grayscale(100%); */
+  /* filter: hue-rotate(360deg); */
+  /* filter:invert(100%); */
+  /* filter:sepia(100%) */
+  /* filter: drop-shadow(10px 10px 2px gray); */
+}
+
+.box-1{
+  /* height: 300px; */
+  /* width: 300px; */
+  /* position: absolute; */
+  /* background-color: red; */
+  /* backdrop-filter: blur(10px); */
+   /* filter:blur(20px) */
+  /* backdrop-filter:brightness(50%) */
+  /* backdrop-filter:saturate(1000%); */
+  /* backdrop-filter:contrast(500%) */
+  /* backdrop-filter:grayscale(100%); */
+  /* backdrop-filter: hue-rotate(240deg); */
+  /* backdrop-filter:invert(100%); */
+  /* backdrop-filter:sepia(100%); */
+}
+
+
+
+
+
+/******** Css Animation - Examples **********/
+/*
+
+animation-name: none{
+
+    If no animation name is specified, no animation is played.
+}
+
+animation-name: fadeIn{
+
+    If a name is specified, the keyframes matching that name will be used.
+    For example, the fadeIn animation looks like this:
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+}
+
+animation-name: moveRight{
+
+    Another example: the moveRight animation:
+    @keyframes moveRight {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(100px);
+      }
+    }
+}
+
+*/
+
+.animation-content{
+  height: 100px;
+  width: 100px;
+  background-color: orangered;
+  animation-name: Rotate;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  margin: 100px;
+}
+
+/* @keyframes Rotate{
+  from{
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+} */
+
+/* @keyframes Rotate{
+  0%{
+    transform: translate(0px);
+    background-color: red;
+  }
+  20%{
+    transform: translate(300px);
+    background-color: black;
+  }
+  40%{
+    transform: scale(2);
+    background-color: blue;
+  }
+  60%{
+    transform: scale(0.5);
+    border:10px solid yellow;
+  }
+  80%{
+    transform: translate(600px);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+  /*
+  
+  animation-duration: 0s;{
+
+      The default value is zero seconds: the animation will simply not  play.
+  }
+  
+  animation-duration: 1.2s;{
+
+      You can use decimal values in seconds with the keyword s.
+  }
+  
+  animation-duration: 2400ms;{
+
+      You can use milliseconds instead of seconds, with the keyword ms.
+  }
+  
+  */
+  
+  
+  
+  
+  
+  
+  
+  
+/* 
+  
+  animation-delay: 0s;{
+
+      The animation will wait zero seconds, and thus start right away.
+  }
+  
+  animation-delay: 1.2s;{
+
+      You can use decimal values in seconds with the keyword s.
+  }
+  
+  animation-delay: 2400ms;{
+
+      You can use milliseconds instead of seconds, with the keyword ms.
+  }
+  
+  animation-delay: -500ms;{
+
+      You can use negative values: the animation will start as if it had already been playing for 500ms.
+  }
+  
+*/
+  
+  
+  /*
+  
+  animation-direction: normal{
+
+      The animation is played forwards. When it reaches the end, it starts over at the first keyframe.
+  }
+
+  animation-direction: reverse{
+
+      The animation is played backwards: begins at the last keyframe, finishes at the first keyframe.
+  }
+
+  animation-direction: alternate{
+
+      The animation is played forwards first, then backwards:
+      starts at the first keyframe
+      stops at the last keyframe
+      starts again, but at the last keyframe
+      stops at the first keyframe
+  }
+
+  animation-direction: alternate-reverse{
+
+      The animation is played backwards first, then forwards:
+      starts at the last keyframe
+      stops at the first keyframe
+      starts again, but at the first keyframe
+      stops at the last keyframe
+}
+  
+*/
+
+/* .animation-direction{
+  height: 100px;
+  width:100px;
+  background-color: gray;
+  animation-name:Move;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  margin: 50px;
+  font-size: 35px;
+  color:white;
+  border:3px solid black;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Move{
+  0%{
+    transform: translate(0px);
+  }
+  50%{
+    transform: translate(500px) rotate(180deg);
+  }
+  100%{
+    transform: translate(1000px);
+  }
+} */
+
+
+
+
+  
+/*
+  
+  animation-fill-mode: none;{
+
+      The animation styles do not affect the default style: the element is set to its default state before the animation starts, and returns to that default state after the animation ends.
+  }
+  
+  animation-fill-mode: forwards;{
+
+      The last styles applied at the end of the animation are retained afterwards.
+  }
+  
+  animation-fill-mode: backwards;{
+
+      The animation's styles will already be applied before the animation actually starts.
+  }
+  
+  animation-fill-mode: both;{
+
+      The styles are applied before and after the animation plays.
+  }
+  
+*/
+
+
+/* .animation-fill{
+  height: 100px;
+  width:100px;
+  background-color: gray;
+  animation-name:Move;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  margin: 50px;
+  font-size: 35px;
+  color:white;
+  border:3px solid black;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Move{
+  0%{
+    transform: translate(0px);
+  }
+  50%{
+    transform: translate(500px) rotate(180deg);
+  }
+  100%{
+    transform: translate(1000px);
+  }
+} */
+
+  
+  
+  
+  
+  
+/*
+  
+  animation-iteration-count: 1;{
+
+      The animation will only play once.
+  }
+  
+  animation-iteration-count: 2;{
+
+      You can use integer values to define a specific amount of times the animation will play.
+  }
+  
+  animation-iteration-count: infinite;{
+
+      By using the keyword infinite, the animation will play indefinitely.
+  }
+  
+*/
+
+/* .animation-infi{
+  height: 100px;
+  width:100px;
+  background-color: gray;
+  animation-name:Move;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  margin: 50px;
+  font-size: 35px;
+  color:white;
+  border:3px solid black;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+} */
+
+/* @keyframes Move{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+} */
+
+
+  
+  
+  
+  
+  
+  
+/*
+  
+  animation-play-state: running;{
+
+      If the animation-duration and animation-name are defined, the animation will start playing automatically.
+  }
+  
+  animation-play-state: paused;{
+      
+      The animation is set paused at the first keyframe.
+      This is different than having either no animation-duration or animation-name at all. If the animation is paused, the style applied is that of the first keyframe, and not the default style.
+      In this example, the square is visible by default, but the on the first keyframe of fadeAndMove, the opacity is set to 0. When paused, the animation will be "stuck" on this first keyframe, and will thus be invisible.
+      @keyframes fadeAndMove {
+        from {
+          opacity: 0;
+          transform: translateX(0);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(100px);
+        }
+      }
+  }
+  
+  */
+  
+  /* .animation-play{
+    height: 100px;
+    width:100px;
+    background-color: gray;
+    animation-name:Move;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    margin: 50px;
+    font-size: 35px;
+    color:white;
+    border:3px solid black;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes Move{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform:rotate(360deg);
+    }
+  } */
+  
+  
+  
+  /*
+  
+  animation-timing-function: ease;{
+
+      The animation starts slowly, accelerates in the middle, and slows down at the end.
+  }
+  
+  animation-timing-function: ease-in;{
+
+      The animation starts slowly, and accelerates gradually until the end.
+  }
+  
+  animation-timing-function: ease-out;{
+
+      The animation starts quickly, and decelerates gradually until the end.
+  }
+  
+  animation-timing-function: ease-in-out;{
+
+      Like ease, but more pronounced.
+      The animation starts quickly, and decelerates gradually until the end.
+  }
+  
+  animation-timing-function: linear;{
+
+      The animation has a *constant speed.
+  }
+  
+  animation-timing-function: step-start;{
+
+      The animation jumps instantly to the final state.
+  }
+  
+  animation-timing-function: step-end;{
+
+      The animation stays at the initial state until the end, when it instantly jumps to the final state.
+  }
+  
+  
+  animation-timing-function: steps(4, end);{
+
+      By using steps() with an integer, you can define a specific number of steps before reaching the end. The state of the element will not vary gradually, but rather jump from state to state in separate instants.
+  }
+  
+  */
+
+
+  .animation-function{
+    height: 100px;
+    width:100px;
+    background-color: gray;
+    animation-name:Move;
+    animation-duration: 5s;
+    /* animation-delay: 5s; */
+    margin: 50px;
+    font-size: 35px;
+    color:white;
+    border:3px solid black;
+    /* animation-fill-mode: both; */
+    animation-iteration-count: infinite;
+    /* animation-play-state: paused; */
+    /* animation-timing-function: steps(100); */
+  }
+  
+  /* @keyframes Move{
+    0%{
+      transform: translate(0px);
+    }
+    100%{
+      transform:translate(900px);
+    }
+  }
+   */
+  
+  
+  /*
+  
+  Shorthand property for animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode and animation-play-state.
+  
+  Only animation-duration and animation-name are required.
+  
+  */
+
+  /* Animation Examples */
+
+  /* Spinner */
+
+  .maindiv{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .circle-1{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 100%;
+    border-top:10px solid green;
+    border-right:10px solid red;
+    border-bottom:10px solid green;
+    border-left:10px solid green;
+    animation-name:rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  @keyframes rotate{
+    0%{
+      transform: rotate(0deg) scale(1);
+    }
+    100%{
+      transform: rotate(360deg) scale(0.5);
+    }
+  }
+
+  .circle-2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 100%;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid red;
+    border-left: 10px solid black;
+    animation-name: rotate2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+  }
+
+
+  @keyframes rotate2{
+    0%{
+      transform: rotate(0deg) scale(0);
+    }
+    100%{
+      transform: rotate(-360deg) scale(1.5);
+    }
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
