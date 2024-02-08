@@ -29,24 +29,89 @@
 
 @keyframes cloude-1 {
     0% {
+        transform: translate(-800px);
+    }
+
+    5% {
+        transform: translate(-600px);
+    }
+
+    10% {
+        transform: translate(-400px);
+    }
+
+    15% {
+        transform: translate(-200px);
+    }
+
+    20% {
         transform: translate(0px);
     }
 
     25% {
+        transform: translate(200px);
+    }
+
+    30% {
+        transform: translate(400px);
+    }
+
+    35% {
         transform: translate(600px);
+
+    }
+
+    40% {
+        transform: translate(800px);
+    }
+
+    45% {
+        transform: translate(1000px);
     }
 
     50% {
         transform: translate(1200px);
     }
 
-    75% {
+    55% {
+        transform: translate(1000px);
+    }
+
+    60% {
+        transform: translate(800px);
+    }
+
+    65% {
         transform: translate(600px);
+    }
+
+    70% {
+        transform: translate(400px);
+    }
+
+    75% {
+        transform: translate(200px);
+    }
+
+    80% {
+        transform: translate(0px);
+    }
+
+    85% {
+        transform: translate(-200px);
+    }
+
+    90% {
+        transform: translate(-400px);
 
     }
 
+    95% {
+        transform: translate(-600px);
+    }
+
     100% {
-        transform: translate(0px);
+        transform: translate(-800px);
     }
 
 }
@@ -64,24 +129,89 @@
 
 @keyframes cloude-2 {
     0% {
+        transform: translate(-850px);
+    }
+
+    5% {
+        transform: translate(-680px);
+    }
+
+    10% {
+        transform: translate(-480px);
+    }
+
+    15% {
+        transform: translate(-280px);
+    }
+
+    20% {
         transform: translate(0px);
     }
 
     25% {
-        transform: translate(-600px);
+        transform: translate(280px);
+    }
+
+    30% {
+        transform: translate(480px);
+    }
+
+    35% {
+        transform: translate(680px);
+
+    }
+
+    40% {
+        transform: translate(880px);
+    }
+
+    45% {
+        transform: translate(1080px);
     }
 
     50% {
-        transform: translate(-1200px);
+        transform: translate(1280px);
+    }
+
+    55% {
+        transform: translate(1080px);
+    }
+
+    60% {
+        transform: translate(880px);
+    }
+
+    65% {
+        transform: translate(680px);
+    }
+
+    70% {
+        transform: translate(480px);
     }
 
     75% {
-        transform: translate(-600px);
+        transform: translate(280px);
+    }
+
+    80% {
+        transform: translate(0px);
+    }
+
+    85% {
+        transform: translate(-280px);
+    }
+
+    90% {
+        transform: translate(-480px);
 
     }
 
+    95% {
+        transform: translate(-680px);
+    }
+
     100% {
-        transform: translate(0px);
+        transform: translate(-880px);
     }
 
 }
@@ -97,32 +227,63 @@
     position: absolute;
     margin-left: 590px;
     animation-fill-mode: backwards;
+    z-index: -25;
 }
 
 
 @keyframes sun {
     0% {
-        transform: translateY(-0px);
+        transform: translateY(-200px);
         background-color: lightyellow;
     }
 
-    25% {
-        transform: translateY(200px);
+    10% {
+        transform: translateY(-100px);
+        background-color: yellow;
+    }
+
+    20% {
+        transform: translateY(0px);
+        background-color: yellow;
+    }
+
+    30% {
+        transform: translateY(150px);
+        background-color: yellow;
+    }
+
+    40% {
+        transform: translateY(300px);
         background-color: yellow;
     }
 
     50% {
-        transform: translateY(400px);
+        transform: translateY(600px);
         background-color: orange;
     }
 
-    75% {
-        transform: translateY(200px);
+    60% {
+        transform: translateY(300px);
+        background-color: yellow;
+    }
+
+    70% {
+        transform: translateY(150px);
+        background-color: yellow;
+    }
+
+    80% {
+        transform: translateY(0px);
+        background-color: yellow;
+    }
+
+    90% {
+        transform: translateY(-100px);
         background-color: yellow;
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(-200px);
         background-color: white;
         overflow: hidden;
     }
