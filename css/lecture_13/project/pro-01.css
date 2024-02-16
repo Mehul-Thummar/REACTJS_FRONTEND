@@ -1,0 +1,25 @@
+.pagi-1 {
+    display: flex;
+    margin: 50px;
+}
+
+.pagi-1 div {
+    height: 50px;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.pagi-1 div span {
+    font-size: 20px;
+}
+
+.pagi-1 div:hover {
+    background-color: lightcoral;
+    color: white;
+    transform:scale(1.5);
+}

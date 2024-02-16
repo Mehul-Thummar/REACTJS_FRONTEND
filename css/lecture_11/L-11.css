@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+
+/* i{
+  font-size: 100px;
+  color:red;
+  
+} */
+
+/* Css Overlay Method */
+
+/* .main-overlay{
+  height: 400px;
+  width: 600px;
+  border:1px solid black;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-overlay img{
+  position: absolute;
+  transition: 2s;
+}
+.main-overlay:hover   .overlay{
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  transition: 1s;
+}
+.main-overlay:hover img{
+  transform: scale(1.5);
+  transition: 2s;
+}
+
+.main-overlay .text-overlay{
+  position: absolute;
+  color:white;
+  font-size: 40px;
+}
+
+.text-overlay{
+  transition: 2s;
+  transform: translateY(300px);
+  opacity: 0;
+}
+
+.main-overlay:hover .text-overlay{
+  display: block;
+  transform: translateY(0px);
+  transition: 2s;
+  opacity: 1;
+} */

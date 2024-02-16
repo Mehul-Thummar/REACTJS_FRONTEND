@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+
+}
+
+
+
+/****** Css Media Queries ********/
+
+/* 
+   ViewPort Xs (320px)
+   ViewPort Sm mobile >=576px
+   ViewPort Md Tablet , Landscape Mobile >=768px
+   ViewPort Lg Small Laptop , Landscape tablet >=992px
+   ViewPort Xl Large Laptop >=1200px
+   ViewPort XXl Desktop >= 1400px
+*/
+
+.responsive{
+  height: 500px;
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+  .responsive{
+    background-color: blue;
+  }
+}
+
+@media (max-width:576px){
+  .responsive{
+    background-color: yellow; 
+  }
+}
+
+
+
+
+@media (max-width: 320px){
+  .responsive{
+    background-color: red;
+  }
+}
+
+ 
