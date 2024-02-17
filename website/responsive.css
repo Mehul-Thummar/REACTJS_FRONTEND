@@ -3,7 +3,7 @@
     display: none;
   }
 
-  .contact {
+.contact {
     display: none;
   }
 
@@ -12,7 +12,7 @@
 @media (min-width:576px) {}
 
 @media (min-width:768px) {
-  .contact {
+.contact {
     display: block;
   }
 
