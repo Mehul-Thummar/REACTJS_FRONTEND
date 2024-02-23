@@ -3,16 +3,19 @@
     display: none;
   }
 
-.contact {
+  .menu-con .contact {
     display: none;
   }
 
+.image1 {
+    /* display: none; */
+  }
 }
 
 @media (min-width:576px) {}
 
 @media (min-width:768px) {
-.contact {
+  .menu-con .contact {
     display: block;
   }
 
