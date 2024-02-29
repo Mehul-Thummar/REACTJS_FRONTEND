@@ -1,1 +1,4 @@
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+
+npx tailwindcss -i ./src/project/pro04/input.css -o ./src/project/pro04/output.css --watch
