@@ -1,6 +1,9 @@
+/* ******** EXAMPLE - 01 ********  */
+
 .pagi-1 {
     display: flex;
-    margin: 50px;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .pagi-1 div {
@@ -21,5 +24,125 @@
 .pagi-1 div:hover {
     background-color: lightcoral;
     color: white;
-    transform:scale(1.5);
+    transform: scale(1.5);
+}
+
+/* ******** EXAMPLE - 02 ********  */
+
+.pagi-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.pagi-2 div {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.pagi-2 div span {
+    font-size: 20px;
+}
+
+.pagi-2 div:hover {
+    background-color: lightgray;
+    transform: scale(1.5);
+}
+
+/* ******** EXAMPLE - 03 ********  */
+
+.pagi-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.pagi-3 div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.pagi-3 div span {
+    font-size: 20px;
+}
+
+.pagi-3 div:hover {
+    color: red;
+    font-weight: bolder;
+    transform: scale(1.5);
+}
+
+/* ******** EXAMPLE - 04 ********  */
+
+.pagi-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.pagi-4 div {
+    height: 40px;
+    width: 40px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.pagi-4 div span {
+    font-size: 20px;
+}
+
+.pagi-4 div:hover {
+    font-weight: bolder;
+    background-color: rgb(152, 90, 152);
+    color: rgb(4, 50, 4);
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+/* ******** EXAMPLE - 05 ********  */
+
+.pagi-5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.pagi-5 div {
+    height: 40px;
+    width: 40px;
+    /* background-color: lightgoldenrodyellow; */
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.pagi-5 div span {
+    font-size: 20px;
+}
+
+span:hover {
+    font-weight: bolder;
+    color: rgb(4, 50, 4);
+    transform: scale(1.5);
+    transition-duration: 1s;
 }
