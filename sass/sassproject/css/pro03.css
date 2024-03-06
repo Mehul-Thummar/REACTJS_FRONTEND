@@ -44,7 +44,7 @@ ul {
 
 .overlayer {
   height: 98px;
-  width: 1115px;
+  width: 1106px;
   background-color: #2a1f3c;
   position: absolute;
   opacity: 0.8;
@@ -67,10 +67,6 @@ ul {
   color: white;
 }
 
-.error-img img {
-  height: 100px;
-}
-
 .p1 {
   font-size: 24px;
 }
@@ -84,51 +80,70 @@ ul {
 }
 
 .banner {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.p-tag {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.p3 {
+.banner .main .line-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.banner .main .line-1 .p3 {
+  margin: 0px;
+}
+.banner .main .line-1 .p4 {
+  margin: 0px;
+  margin-left: 5px;
   color: #ff6600;
-  font-size: 20px;
-}
-
-.p4 {
   font-style: italic;
-  font-size: 20px;
 }
-
-button {
+.banner .main .p5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.banner .main .name {
+  height: 20px;
+  width: 250px;
+  margin-right: 10px;
+  font-size: 8px;
+  padding-left: 10px;
+}
+.banner .main .email {
+  height: 20px;
+  width: 250px;
+  font-size: 8px;
+  padding-left: 10px;
+}
+.banner .main .phone {
+  height: 20px;
+  width: 513px;
+  margin-top: 10px;
+  font-size: 8px;
+  padding-left: 10px;
+}
+.banner .main textarea {
+  height: 120px;
+  width: 513px;
+  margin-top: 10px;
+  font-size: 8px;
+  padding-left: 10px;
+}
+.banner .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .button button {
   height: 30px;
   width: 100px;
   font-size: 10px;
   background-color: #ff6600;
   color: white;
   border: none;
-}
-
-.overlayer-2 {
-  height: 100%;
-  width: 100%;
-  background-color: #2a1f3c;
-  position: absolute;
-  opacity: 0.8;
-}
-
-.footer {
-  overflow: hidden;
-  position: relative;
-  height: 50px;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.f-img img {
-  width: 100%;
-}/*# sourceMappingURL=pro01.css.map */
+  margin-top: 30px;
+}/*# sourceMappingURL=pro03.css.map */

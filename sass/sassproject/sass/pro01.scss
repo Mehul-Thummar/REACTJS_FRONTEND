@@ -117,8 +117,8 @@ button {
 
 .overlayer-2 {
     // margin-top: 50px;
-    height: 100%;
-    width: 100%;
+    height: $h-0;
+    width: $w-0;
     background-color: #2a1f3c;
     position: absolute;
     opacity: 0.8;
@@ -129,7 +129,9 @@ button {
     overflow: hidden;
     position: relative;
     height: 50px;
-    width: 100%;
+    width: $w-0;
+    margin-top: 50px;
+
 }
 
 .f-img img {

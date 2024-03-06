@@ -1,0 +1,168 @@
+@import 'variables';
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: $t-d-none;
+}
+
+li {
+    list-style-type: $l-s-t-none;
+}
+
+ul {
+    @include flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#a-d {
+    font-size: 10px;
+}
+
+.buy-tickit {
+    height: $h-4;
+    width: 140px;
+    background-color: $bg-6;
+    @include flex;
+    color: $c-7;
+    font-size: 12;
+}
+
+#t-symbole {
+    rotate: -45deg;
+}
+
+.overlayer {
+    height: 98px;
+    width: 1106px;
+    background-color: #2a1f3c;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.title-img {
+    width: $w-0;
+    height: 20%;
+
+}
+
+.text {
+    @include flex;
+    text-align: $t-a-c;
+    line-height: 1px;
+    position: absolute;
+    width: $w-0;
+    height: 100px;
+    color: $c-7;
+}
+
+.p1 {
+    font-size: 24px;
+}
+
+#angle {
+    font-size: 8px;
+}
+
+.p2 {
+    font-size: 10px;
+}
+
+// ******************************************
+.banner {
+    @include flex;
+
+    .main {
+
+
+
+        .line-1 {
+            @include flex;
+            margin-top: 50px;
+
+            .p3 {
+                margin: 0px;
+            }
+
+            .p4 {
+                margin: 0px;
+                margin-left: 5px;
+                color: $c-6;
+                font-style: italic;
+            }
+        }
+
+        .p5 {
+            @include flex;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+
+        .name {
+            height: 20px;
+            width: 250px;
+            margin-right: 10px;
+            font-size: 8px;
+            padding-left: 10px;
+        }
+
+        .email {
+            height: 20px;
+            width: 250px;
+            font-size: 8px;
+            padding-left: 10px;
+        }
+
+
+        .phone {
+            height: 20px;
+            width: 513px;
+            margin-top: 10px;
+            font-size: 8px;
+            padding-left: 10px;
+        }
+
+        textarea {
+            height: 120px;
+            width: 513px;
+            margin-top: 10px;
+            font-size: 8px;
+            padding-left: 10px;
+
+        }
+    }
+
+    .button {
+        @include flex;
+
+        button {
+            height: 30px;
+            width: $w-1;
+            font-size: $fs-6;
+            background-color: $bg-6;
+            color: $c-7;
+            border: none;
+            margin-top: 30px;
+        }
+    }
+}

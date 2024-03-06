@@ -1,0 +1,232 @@
+@import 'variables';
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: $t-d-none;
+}
+
+li {
+    list-style-type: $l-s-t-none;
+}
+
+ul {
+    @include flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#a-d {
+    font-size: 10px;
+}
+
+.buy-tickit {
+    height: $h-4;
+    width: 140px;
+    background-color: $bg-6;
+    @include flex;
+    color: $c-7;
+    font-size: 12;
+}
+
+#t-symbole {
+    rotate: -45deg;
+}
+
+.overlayer {
+    height: 98px;
+    width: 1123px;
+    background-color: #2a1f3c;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.title-img {
+    width: $w-0;
+    height: 20%;
+
+}
+
+.text {
+    @include flex;
+    text-align: $t-a-c;
+    line-height: 1px;
+    position: absolute;
+    width: $w-0;
+    height: $h-1;
+    color: $c-7;
+}
+
+
+.p1 {
+    font-size: 24px;
+}
+
+#angle {
+    font-size: 8px;
+}
+
+.p2 {
+    font-size: 10px;
+}
+
+// ************************************
+
+.banner {
+    .image-text {
+        @include flex2;
+    }
+
+    .image-text {
+        margin-top: 35px;
+    }
+
+    .brackline {
+        margin: 35px 275px;
+        outline: 1px solid lightgray;
+    }
+}
+
+.image-text {
+    img {
+        height: 210px;
+        padding: 2px;
+        outline: 1px solid gray;
+    }
+
+    .text2 {
+        margin-left: 20px;
+    }
+
+}
+
+
+
+.text2 {
+    h1 {
+        margin: 0px;
+    }
+
+    h6 {
+        margin: 0px;
+        margin-left: 20px;
+    }
+}
+
+.text2 {
+    .p3 {
+        font-size: 10px;
+    }
+
+    .p4 {
+        font-size: 10px;
+    }
+
+    .p5 {
+        color: $c-6;
+        font-size: 10px;
+    }
+
+    .p6 {
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+.image-text {
+    .logo {
+        display: inline-flex;
+        margin-top: 8px;
+    }
+
+    .twitter {
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 3px;
+        margin-right: 10px;
+    }
+
+    .linkin {
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 3px;
+        margin-right: 10px;
+    }
+
+    .facebook {
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 3px;
+        margin-right: 10px;
+    }
+
+    .skype {
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 3px;
+        margin-right: 10px;
+    }
+
+    .pintrest {
+        font-size: 10px;
+        border: 1px solid black;
+        padding: 3px;
+        margin-right: 10px;
+    }
+
+}
+
+.fotter {
+    margin-top: 60px;
+
+    .text-3 {
+        @include flex2;
+
+        .left {
+            margin-right: 25px;
+
+            .h1 {
+                margin: 0px;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .p7 {
+                margin: 0px;
+                font-size: 10px;
+            }
+        }
+
+        .right {
+            .h2 {
+                margin: 0px;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .p8 {
+                margin: 0px;
+                font-size: 10px;
+            }
+        }
+    }
+}
