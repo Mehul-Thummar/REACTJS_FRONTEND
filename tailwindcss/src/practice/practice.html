@@ -8,43 +8,63 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
-    <!-- Aspect Ratio -->
+<body class="ml-10">
 
-    <iframe class="w-10 aspect-video ..." src="clematis_flower_petals_1181576_1920x1080.jpg"></iframe>
-
-    <!-- Container -->
-    <div class="container mx-auto"></div>
-
-    <!-- Columns -->
-    <div class="columns-2 ">
-        <img class="h-10 w-20" src="clematis_flower_petals_1181576_1920x1080.jpg" />
-        <img class="h-10 w-20" src="clematis_flower_petals_1181576_1920x1080.jpg" />
+    <h1 class="font-bold mt-8">---------- Aspect Ratio -----------</h1>
+    <div class="aspect-video">
+        <iframe class="w-full    " frameborder="0" src="video (2160p).mp4"></iframe>
     </div>
 
-    <!-- break after -->
-    <div class="columns-4 row-">
+    <!-- Container -->
+    <!-- <div class="container m-auto "></div> -->
+
+    <h1 class="font-bold mt-8">---------- Columns-----------</h1>
+    <div class="columns-5 ">
+        <img class="h-10 w-20 ml-10" src="clematis_flower_petals_1181576_1920x1080.jpg" />
+        <img class="h-10 w-20 ml-10" src="clematis_flower_petals_1181576_1920x1080.jpg" />
+        <img class="h-10 w-20 ml-10" src="clematis_flower_petals_1181576_1920x1080.jpg" />
+        <img class="h-10 w-20 ml-10" src="clematis_flower_petals_1181576_1920x1080.jpg" />
+        <img class="h-10 w-20 ml-10" src="clematis_flower_petals_1181576_1920x1080.jpg" />
+    </div>
+
+    <h1 class="font-bold mt-8">---------- Break after -----------</h1>
+
+    <div class="columns-3">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis dolor omnis possimus ea. Ex rerum
             eius ullam, repellat est in voluptate ea veniam eveniet voluptatum modi, labore deleniti minima!</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptates
             doloremque vel quae fugit veniam corporis odit quisquam est sequi quod eum eligendi mollitia iure et minima
             hic magnam aspernatur.</p>
-        <img class="h-20 w-10" src="clematis_flower_petals_1181576_1920x1080.jpg" alt="">
-        <p class="break-after-column">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consectetur
+        <img class="h-20 w-32" src="clematis_flower_petals_1181576_1920x1080.jpg" alt="">
+        <p class="break-after-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consectetur
             necessitatibus quia ab in
             sapiente ad odio cupiditate laborum excepturi! Consectetur nihil dolorem harum saepe commodi enim veritatis
             voluptas autem?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci optio natus, ex vitae debitis delectus
-            soluta exercitationem mollitia commodi saepe reprehenderit earum repellendus hic. Quae inventore facere
-            nostrum voluptatem quasi.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, dolorum in vitae fuga delectus optio ullam
-            tempore commodi accusamus! Ducimus sint fuga deserunt magni perspiciatis non, temporibus sunt perferendis
-            dolores?</p>
+            soluta exercitationem mollitia commodi
+            <img class="h-20 w-32" src="clematis_flower_petals_1181576_1920x1080.jpg" alt="">
+            saepe reprehenderit earum repellendus hic. Quae inventore facere
+            nostrum voluptatem quasi.
+        </p>
+
     </div>
 
-    <!-- Box Decoration Break -->
-    <p class="box-decoration-slice bg-gradient-to-r from-indigo-500 to-pink-500">skill <br> qode</p>
+    <h1 class="font-bold mt-8">---------- Box Decoration Break -----------</h1>
+    <span class="box-decoration-slice bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-2xl font-bold px-2">
+        Skill<br>Qode</span> <br>
+    <div class="mt-5"></div>
+    <span class="box-decoration-clone bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-2xl font-bold px-2">
+        Skill<br>Qode</span>
 
+    <h1 class="font-bold mt-8">---------- Box Sizing -----------</h1>
+    <div class="box-border h-32 w-32 border-4 p-4 bg-red-400 mb-10"></div>
+    <div class="box-content h-32 w-32 border-4 p-4 bg-green-400"></div>
+
+
+    <h1 class="font-bold mt-8">---------- Object Fit -----------</h1>
+    <div class="bg-purple-300 h-48 w-96 ">
+        <img class="object-contain h-48 w-96" src="clematis_flower_petals_1181576_1920x1080.jpg" alt="">
+    </div>
 </body>
 
 </html>
