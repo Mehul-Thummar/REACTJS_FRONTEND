@@ -1,0 +1,183 @@
+@import 'variables';
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: $t-d-none;
+}
+
+li {
+    list-style-type: $l-s-t-none;
+}
+
+ul {
+    @include flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#a-d {
+    font-size: 10px;
+}
+
+.buy-tickit {
+    height: $h-4;
+    width: 140px;
+    background-color: $bg-6;
+    @include flex;
+    color: $c-7;
+    font-size: 12;
+}
+
+#t-symbole {
+    rotate: -45deg;
+}
+
+.overlayer {
+    height: 98px;
+    width: 1115px;
+    background-color: #2a1f3c;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.title-img {
+    width: $w-0;
+    height: 20%;
+
+}
+
+.text {
+    @include flex;
+    text-align: $t-a-c;
+    line-height: 1px;
+    position: absolute;
+    width: $w-0;
+    height: 100px;
+    color: $c-7;
+}
+
+
+.p1 {
+    font-size: 24px;
+}
+
+#angle {
+    font-size: 8px;
+}
+
+.p2 {
+    font-size: 10px;
+}
+
+.error-img img {
+    height: $h-1;
+}
+
+// ************************************
+
+.banner {
+    .image-text {
+        @include flex2;
+    }
+
+    .image-text {
+        margin-top: 35px;
+    }
+}
+
+.image-text {
+    img {
+        height: 180px;
+        border-radius: 100%;
+    }
+
+    .text2 {
+        margin-left: 20px;
+    }
+
+}
+
+.text2 {
+    h1 {
+        margin: 0px;
+    }
+
+    h6 {
+        margin: 0px;
+        margin-left: 20px;
+    }
+}
+
+.text2 {
+    @include flex;
+
+    .p3 {
+        font-size: 20px;
+    }
+
+    .p4 {
+        color: $c-6;
+        font-style: italic;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+
+// button {
+//     height: 30px;
+//     width: $w-1;
+//     font-size: $fs-6;
+//     background-color: $bg-6;
+//     color: $c-7;
+//     border: none;
+// }
+
+// .overlayer-2 {
+//     // margin-top: 50px;
+//     height: $h-0;
+//     width: $w-0;
+//     background-color: #2a1f3c;
+//     position: absolute;
+//     opacity: 0.8;
+
+// }
+
+// .footer {
+//     overflow: hidden;
+//     position: relative;
+//     height: 50px;
+//     width: $w-0;
+//     margin-top: 50px;
+
+// }
+
+// .f-img img {
+//     width: $w-0;
+// }
