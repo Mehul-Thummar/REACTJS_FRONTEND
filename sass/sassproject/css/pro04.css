@@ -83,69 +83,56 @@ ul {
   display: flex;
   justify-content: center;
 }
-
 .banner .image-text {
   margin-top: 35px;
 }
-
 .banner .image-text .img-anchor {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .banner .image-text .i-1 {
   height: 150px;
   padding: 2px;
   border-radius: 100%;
   position: absolute;
 }
-
 .banner .image-text .i-2 {
   height: 170px;
 }
-
 .banner .image-text .text2 {
   margin-left: 20px;
 }
-
 .banner .image-text .text2 .p-3-4 {
   font-size: 22px;
   display: flex;
 }
-
 .banner .image-text .text2 .p3 {
   margin: 0px;
 }
-
 .banner .image-text .text2 .p4 {
   margin: 0px;
   margin-left: 5px;
   color: #ff6600;
   font-style: italic;
 }
-
 .banner .image-text .text2 .oran-line {
   height: 2px;
   width: 30px;
   background-color: #ff6600;
 }
-
 .banner .image-text .text2 .p5 {
   font-size: 10px;
 }
-
 .banner .image-text .text2 .p6 {
   font-size: 10px;
   color: gray;
 }
-
 .banner .image-text .text2 .p7 {
   margin: 0px;
   font-size: 12px;
   font-weight: 500;
 }
-
 .banner .image-text .text2 .b-1 {
   height: 30px;
   width: 100px;
@@ -154,7 +141,6 @@ ul {
   color: white;
   border: none;
 }
-
 .banner .image-text .text2 .b-2 {
   margin-left: 10px;
   height: 30px;
@@ -163,7 +149,6 @@ ul {
   background-color: white;
   border: 1px solid black;
 }
-
 .banner .footer {
   overflow: hidden;
   position: relative;
@@ -171,7 +156,6 @@ ul {
   width: 100%;
   margin-top: 50px;
 }
-
 .banner .footer .overlayer-2 {
   height: 100px;
   width: 100%;
@@ -179,7 +163,6 @@ ul {
   position: absolute;
   opacity: 0.8;
 }
-
 .banner .footer .overlayer-text {
   height: 100%;
   width: 100%;
@@ -189,20 +172,15 @@ ul {
   align-items: center;
   margin-top: 10px;
 }
-
 .banner .footer .overlayer-text .p-7 {
   color: white;
   margin-right: 8px;
 }
-
 .banner .footer .overlayer-text .p-8 {
   color: #ff6600;
   font-style: italic;
 }
-
 .banner .footer .f-img img {
   width: 100%;
   object-position: bottom;
-}
-
-/*# sourceMappingURL=pro04.css.map */
+}/*# sourceMappingURL=pro04.css.map */
