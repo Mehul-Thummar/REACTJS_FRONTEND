@@ -101,7 +101,7 @@ ol {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     margin-top: 70px;
 
 }
@@ -160,12 +160,11 @@ ol {
 
 /* **************************************** */
 
-.p2 {
+.digital-2 .p2 {
     display: flex;
     justify-content: center;
     font-size: 12px;
     color: #60697b;
-    margin-top: 60px;
 }
 
 .logo-group-5 img {
@@ -174,12 +173,11 @@ ol {
 
 }
 
-.logo-group-5 {
+.digital-2 .logo-group-5 {
     margin-top: 20px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 /* ********************************** */
