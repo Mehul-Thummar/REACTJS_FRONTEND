@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .image {
+            background-image: url(image/10.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative w-full h-screen">
+        <div class="image w-screen h-screen bg-cover bg-center blur-md"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto">
+            <div class="flex justify-center items-center">
+                <div class="w-96 bg-white rounded-2xl p-4">
+                    <div class="relative flex justify-center">
+                        <img class="h-32 w-96 rounded-xl" src="image/01.jpeg" alt="">
+                        <img class="absolute mt-24 h-16 w-16 ring-4 ring-white rounded-full" src="image/02.jpg" alt="">
+                    </div>
+                    <h1 class="flex justify-center items-center text-2xl font-semibold mt-14">Adela Parkson</h1>
+                    <h1 class="flex justify-center items-center text-gray-500 ">Product Manager</h1>
+                    <div class="flex justify-evenly text-center items-center mt-7">
+                        <div>
+                            <h1 class="text-2xl font-semibold">17</h1>
+                            <p class="text-gray-400 ">Post</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-semibold">9.7K</h1>
+                            <p class="text-gray-400 ">Followers</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-semibold">434</h1>
+                            <p class="text-gray-400 ">Following</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

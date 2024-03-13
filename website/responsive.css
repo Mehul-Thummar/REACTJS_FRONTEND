@@ -3,8 +3,6 @@
     display: block;
   }
 
-
-
   .image-1 {
     padding: 0px;
   }
@@ -22,10 +20,39 @@
     width: 130px;
     font-size: 17px;
   } */
+  .digital-2 .p2 {
+    font-size: 18px;
+  }
+
   .digital-2 .logo-group-5 {
-   display: flex;
-   flex-wrap: wrap;
-}
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo-group-5 img {
+    height: 22;
+    width: 80;
+    margin-top: 40px;
+    padding: 0px 10px;
+  }
+
+  .count-1 h2 {
+    font-size: 35px;
+  }
+
+  .arti-text h3 {
+    font-size: 27px;
+  }
+
+  .arti-text .p4 {
+    font-size: 20px;
+  }
+
+  .arti .a_i {
+    font-size: 22px;
+  }
+
+
 
 }
 
@@ -43,10 +70,13 @@
     display: none;
   }
 
+  h3 {
+    font-size: 27px;
+  }
 
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .all-menu .nav-items {
     display: block;
   }
@@ -91,6 +121,39 @@
 
   .button-gs {
     margin: 0px;
+  }
+
+  .digital-2 .p2 {
+    font-size: 12px;
+  }
+
+  .logo-group-5 img {
+    height: 30px;
+    width: 110px;
+    margin-top: 15px;
+    padding: 0px 10px;
+  }
+
+  .count-1 h2 {
+    font-size: 40px;
+  }
+
+  .digital-3 .count-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .arti-text h3 {
+    font-size: 18px;
+  }
+
+  .arti-text .p4 {
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  .arti .a_i {
+    font-size: 16px;
   }
 }
 

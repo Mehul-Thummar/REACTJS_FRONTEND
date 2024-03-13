@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .image{
+            background-image: url(image/7.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative w-full h-screen bg-gray-300">
+        <div class="image w-screen h-screen bg-cover bg-center blur-md relative"></div>
+        <div class="absolute w-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div class="flex justify-center items-center">
+                <div class="w-full max-w-xs ">
+                    <div class="grid grid-row-5 bg-white shadow-md rounded-2xl p-4 w-[350px] h-[380px] justify-center items-center">
+                        <div class="flex items-center">
+                            <h1 class="text-xl font-bold ">Horizon UI Inputs</h1>
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold" for="name">Default</label><br>
+                            <input class="h-10 w-[300px] border rounded-lg mt-1 pl-2" type="text"
+                                placeholder="@horizon.ui">
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold" for="name">Success</label><br>
+                            <input class="h-10 w-[300px] border placeholder-green-500 border-green-500 rounded-lg mt-1 pl-2" type="email"
+                                placeholder="Success input">
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold" for="name">Error</label><br>
+                            <input class="h-10 w-[300px] border placeholder-red-500 border-red-500 rounded-lg mt-1 pl-2" type="password"
+                                placeholder="Error input">
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold " for="name">Disabled</label><br>
+                            <input class="h-10 w-[300px] bg-slate-200 border rounded-lg mt-1 pl-2" type="password"
+                                placeholder="@horizon.ui">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
