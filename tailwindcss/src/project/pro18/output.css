@@ -698,6 +698,10 @@ video {
   margin: 0.5rem;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -957,6 +961,10 @@ video {
   height: 100vh;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1069,6 +1077,66 @@ video {
   width: 100vw;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-\[px\] {
+  width: px;
+}
+
+.w-\[480px\] {
+  width: 480px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
+.w-\[460px\] {
+  width: 460px;
+}
+
+.w-\[470px\] {
+  width: 470px;
+}
+
+.w-\[465px\] {
+  width: 465px;
+}
+
+.w-\[484px\] {
+  width: 484px;
+}
+
+.w-\[4px\] {
+  width: 4px;
+}
+
+.w-\[468px\] {
+  width: 468px;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1176,6 +1244,10 @@ video {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1277,24 +1349,24 @@ video {
   border-radius: 0.375rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-dashed {
@@ -1363,6 +1435,11 @@ video {
 .border-slate-400 {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
+.border-red-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 226 226 / var(--tw-border-opacity));
 }
 
 .border-b-black {
@@ -1918,6 +1995,10 @@ video {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2022,6 +2103,26 @@ video {
 .text-yellow-700 {
   --tw-text-opacity: 1;
   color: rgb(161 98 7 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .underline {
