@@ -120,7 +120,7 @@ ol {
 }
 
 .text-1 .p1 {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
     color: #343f52;
     margin-bottom: 20px;
@@ -143,7 +143,7 @@ ol {
     font-size: 16px;
     font-weight: 500;
     color: white;
-    height: 40px;
+    height: 45px;
     width: 110px;
     border-radius: 50px;
 }
@@ -155,7 +155,7 @@ ol {
 }
 
 .image-1 {
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
 }
 
 /* **************************************** */
@@ -253,7 +253,8 @@ ol {
 .digital-4 {
     display: flex;
     justify-content: center;
-    background-color: #f0f8fe;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .text-area-1 .p5 {
@@ -265,28 +266,30 @@ ol {
     font-family: Urbanist, sans-serif;
     font-weight: 700;
     padding-bottom: 20px;
+    margin-top: 40px;
 }
 
-h4 {
+.text-area-1 h4 {
     color: #343f52;
-    text-align: start;
-    font-size: 40px;
-    letter-spacing: normal;
+    font-size: 35px;
 }
 
-.p6 {
+.text-area-1 .p6 {
     color: #60697b;
     text-align: start;
     font-size: 17px;
+    margin-top: 25px;
+    line-height: 30px;
 }
 
 .card-1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130px;
-    width: 430px;
+    height: 180px;
+    width: 300px;
     background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     margin-bottom: 25px;
     border-radius: 5px;
     padding: 30px;
@@ -297,32 +300,33 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130px;
-    width: 400px;
+    height: 180px;
+    width: 300px;
     background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     margin-bottom: 25px;
     border-radius: 5px;
     padding: 30px;
-    margin-left: 50px;
+
 }
 
 .card-3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130px;
-    width: 405px;
+    height: 180px;
+    width: 300px;
     background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     margin-bottom: 25px;
     border-radius: 5px;
     padding: 30px;
-    margin-left: 25px;
 
 }
 
 .circle {
-    height: 60px;
-    width: 80px;
+    height: 65px;
+    width: 150px;
     border-radius: 100%;
     background-color: #e5f4fd;
     justify-content: center;
@@ -341,39 +345,63 @@ h4 {
     color: #343f52;
 }
 
-.card-area {
-    margin-left: 50px;
-}
-
 .card-p {
     color: #60697b;
 }
 
+.text-area-1 .button-lm {
+    background-color: #5eb9f0;
+    text-decoration: none;
+    border: 0;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    height: 55px;
+    width: 130px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.text-area-1 {
+    order: 2;
+}
+
+.card-area {
+    order: 1;
+}
+
 /* ************************************** */
+/* <!-- Section-4 -->  */
+
 .digital-5 {
-    padding-top: 90px;
+    margin-top: 80px;
+}
+
+.text-2 h6 {
+    font-size: calc(1.395rem + 1.7vw);
+    line-height: 1.2;
+    color: #343f52;
+    font-family: Urbanist, sans-serif;
+}
+
+.text-2 .l-i {
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.line {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-h5 {
-    font-size: 40px;
-    text-align: left;
-    color: #343f52;
-    font-family: Urbanist, sans-serif;
-    margin: 0;
+.l-i .line :first-child {
+    margin-right: 10px;
+    color: #5eb9f0;
 }
 
-.text-2 {
-    margin-left: 180px;
-}
-
-.p8 {
-    line-height: 25px;
-    text-align: left;
-    margin-bottom: 30px;
-    margin-top: 50px;
+.line:focus {
+    color: #5eb9f0;
 }
 
 .image2 {
@@ -384,12 +412,18 @@ h5 {
     width: 400px;
 }
 
-.p7 {
+.image-2 img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.text-2 .p7 {
+    margin-bottom: 15px;
     color: #5eb9f0;
-    text-align: start;
-    font-size: 16px;
-    line-height: 21.6px;
     letter-spacing: 0.4px;
     font-family: Urbanist, sans-serif;
     font-weight: 500;
 }
+
+/* ******************************************** */

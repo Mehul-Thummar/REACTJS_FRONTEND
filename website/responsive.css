@@ -52,7 +52,9 @@
     font-size: 22px;
   }
 
-
+  .text-2 {
+    margin-top: 50px;
+  }
 
 }
 
@@ -89,6 +91,8 @@
     display: none;
   }
 
+  /* Banner section */
+
   .banner {
     grid-template-columns: auto 50%;
     justify-content: space-between;
@@ -123,6 +127,9 @@
     margin: 0px;
   }
 
+  /* ************************************ */
+  /* <!-- Section-1 --> */
+
   .digital-2 .p2 {
     font-size: 12px;
   }
@@ -134,13 +141,16 @@
     padding: 0px 10px;
   }
 
-  .count-1 h2 {
-    font-size: 40px;
-  }
+  /* ************************************ */
+  /* <!-- Section-2 --> */
 
   .digital-3 .count-2 {
     display: flex;
     justify-content: center;
+  }
+
+  .count-1 h2 {
+    font-size: 40px;
   }
 
   .arti-text h3 {
@@ -155,6 +165,133 @@
   .arti .a_i {
     font-size: 16px;
   }
+
+  /* ************************************ */
+  /* <!-- Section-3 --> */
+
+  .text-area-1 {
+    order: 1;
+  }
+
+  .card-area {
+    order: 2;
+  }
+
+
+  .digital-4 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .card-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 430px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 30px;
+
+  }
+
+  .card-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 400px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 30px;
+    margin-left: 50px;
+  }
+
+  .card-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 405px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 30px;
+    margin-left: 25px;
+
+  }
+
+  .circle {
+    height: 60px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: #e5f4fd;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #5eb9f0;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+  }
+
+  .card-area {
+    margin-left: 50px;
+  }
+
+  .text-area-1 .p5 {
+    margin-top: 0px;
+  }
+
+  .text-area-1 .button-lm {
+    height: 45px;
+    width: 110px;
+  }
+
+  /* ************************************ */
+  /* <!-- Section-4 --> */
+
+  .digital-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .image-2 {
+    padding: 0px 20px;
+  }
+
+  .text-2 {
+    margin: 0px;
+    margin-left: 50px;
+    text-align: start;
+  }
+
+  .line:hover {
+    color: #5eb9f0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media (min-width:1200px) {}
