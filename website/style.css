@@ -378,8 +378,8 @@ ol {
     margin-top: 80px;
 }
 
-.text-2 h6 {
-    font-size: calc(1.395rem + 1.7vw);
+.text-2 h1 {
+    font-size: 35px;
     line-height: 1.2;
     color: #343f52;
     font-family: Urbanist, sans-serif;
@@ -400,9 +400,6 @@ ol {
     color: #5eb9f0;
 }
 
-.line:focus {
-    color: #5eb9f0;
-}
 
 .image2 {
     display: flex;
@@ -427,3 +424,66 @@ ol {
 }
 
 /* ******************************************** */
+/* <!-- Section-5 --> */
+
+.digital-6 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.company-text-area h5 {
+    color: #5eb9f0;
+    margin-bottom: 15px;
+}
+
+.company-text-area h1 {
+    margin-bottom: 20px;
+    padding-right: 25px;
+    color: #343f52;
+    margin-bottom: 25px;
+}
+
+.company-text-area p {
+    font-size: 17px;
+    line-height: 28.9px;
+    color: #60697b;
+    padding-right: 60px;
+}
+
+.company-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-1 {
+    margin: 0 45px;
+}
+
+.box-1 i {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(94, 185, 240, 0.2);
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #5eb9f0;
+    font-size: 18px;
+}
+
+.box-1 h3 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.box-1 h5 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    ;
+    color: #60697b;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}

@@ -56,6 +56,20 @@
     margin-top: 50px;
   }
 
+  .card-text :nth-child(1) {
+    font-weight: 500;
+  }
+
+  .text-2 h1 {
+    font-size: 30px;
+  }
+
+  .line:hover {
+    color: red;
+    /* color: #5eb9f0; */
+  }
+
+
 }
 
 
@@ -275,7 +289,12 @@
     color: #5eb9f0;
   }
 
+  .text-2 h1 {
+    font-size: calc(1.395rem + 1.10vw);
+  }
 
+  /* ************************************ */
+  /* <!-- Section-5 --> */
 
 
 
