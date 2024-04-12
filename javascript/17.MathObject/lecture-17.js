@@ -1,184 +1,40 @@
-/* javascript Array Method */
+/* Javascript Math Object Method */
 
-/*
-
-fill
-some
-every
-reduce
-reduceRight
-find
-findIndex
-findLastIndex
-include
-Array.isArray
-flat
-flatMap
-
-*/
-
-/* fill Method in array */
-
-{
-    let array = ["java", "html", "react", "css", "node"]
-
-    let fill = array.fill("skillqode", 2)
-
-    console.log(fill);
-}
-
-/* some / every method */
-
-{
-    let array = ["java", "html", "react", "CSS", "node"]
-
-    let some = array.some(item => item === "java")
-    let every = array.every(item => item === "java")
-
-    console.log(some);
-    console.log(every);
-}
-
-/* reduce Method */
-
-{
-    // let Num = [12, 21, 36, 10]
-
-    // let reduce = Num.reduce((current, previ) => current + previ)
-    // let reduceRight = Num.reduceRight((current, previ) => current + previ)
-
-    // console.log(reduce);
-
-    // console.log(reduceRight);
-}
-
-/* findIndex findlastindex */
-
-{
-    // let array = ["java", "html", "react", "CSS", "node"]
-    // let array = [45, 35, 456, 65, 21]
-
-    // let arrays = array.findIndex(item => item.length < 4)
-    // let arrays1 = array.findLastIndex(item => item.length < 4)
-
-    // let Num1 = array.findIndex(item => item > 30)
-
-    // console.log(arrays);
-    // console.log(arrays1);
-
-    // console.log(Num1);
-}
-
-/* include method in array */
-
-{
-    // let Num = [56, 21, 45, 36, 21]
-
-    // let include Num.includes(21)
-
-    // console.log(include);
-}
-
-/* Array.isArray */
-
-{
-    // let ArrayOject = new Array(45, 635, 24, 325)
-
-    // console.log(ArrayOject);
-
-    // let Array = [12, 15, 36]
-
-    // let isArray = Array.isArray()
-
-    // console.log(Array);
-
-    // console.log(Array.isArray([]));
-    // console.log(Array.isArray('12'));
-    // console.log(Array.isArray(new Array(45, 635, 24, 325)));
-    // console.log(Array.isArray(new Array()));
-}
-
-
-/* flat / flatmap Method in Array */
-
-{
-    // let NewArray = [12, 15, 36, [45, 98, 42, [15, 25, 101]]]
-
-    // console.log(NewArray);
-
-    // let Flat = NewArray.flat()
-
-    // console.log(Flat);
-
-    // let Flat1 = NewArray.flat(2)
-
-    // console.log(Flat1);
-
-    // let array = [10, 20, 10, 20]
-
-    // let flatmap = array.flatMap(item => (item === 10 ? [10, [10, 10]] : 20))
-
-    // console.log(flatmap);
-}
-
-/* at() method */
-
-{
-    // let arry = ["data", "disk", "number", "value"]
-
-    // let at = arry.at(4)
-
-    // console.log(at);
-}
-
-/* join array Method */
-
-{
-    // let arry = ["data", "disk", "number", "value"]
-
-    // let join = arry.join("\"")
-
-    // console.log(join);
-
-    // console.log(typeof join);
-}
-
-/* MathObject Method in Javascript */
-
-// console.log(Math);
-
-let Maths1 = Math.PI
+let Maths1 = Math.round(12.495)
 console.log(Maths1);
 
-let Maths2 = Math.sqrt(1024)
-
+let Maths2 = Math.sign(-89)
+let Maths3 = Math.sign(89)
+let Maths4 = Math.sign(-0)
 console.log(Maths2);
-
-let Maths3 = Math.log(10)
-let Maths4 = Math.log2(10)
-let Maths5 = Math.log10(10)
-
 console.log(Maths3);
 console.log(Maths4);
+
+let Maths5 = Math.max(12, 56, 85, 36, 65, 4554)
+let Maths6 = Math.min(12, 56, 85, 36, 65, 4554)
+
 console.log(Maths5);
 
-// https://byjus.com/maths/logarithm-table/
-
-let Maths6 = Math.ceil(26.47)
-
-let Maths7 = Math.floor(26.67)
-
 console.log(Maths6);
+
+let Maths7 = Math.sin(90 * 3.14 / 180)
+let Maths8 = Math.cos(90 * 3.14 / 180)
+
 console.log(Maths7);
 
-let fix = 10.476
-
-let tofix = fix.toFixed(2)
-
-console.log(tofix);
-
-let Maths8 = Math.trunc(101.99)
-
 console.log(Maths8);
-let Maths9 = Math.pow(5, 3)
+
+let Maths9 = Math.random()
+
 console.log(Maths9);
+
+let Maths10 = Math.floor(Math.random() * 100) + 1
+
+console.log(Maths10);
+
+let max = 100;
+let min = 91;
+
+let Maths11 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+console.log(Maths11);
