@@ -1,23 +1,27 @@
 import './App.css';
-// import Navbar from './components/Navbar';
-// import Home from './components/Home';
-import Example from './components/Example'
-import Card from './components/Card';
-import Card2 from './components/Card2';
-import Card3 from './components/Card3';
-import Card4 from './components/Card4';
+import Com_A from './components/Com_A';
+import { createContext } from 'react';
+
+const data = createContext()
+const data1 = createContext()
+
+/* contextAPI :- createContext  , Provider   ,Consumer */
+
 function App() {
+
+  const name = "kishor"
+  const Age = 90
+
   return (
     <>
-      {/* <Home/> */}
-      {/* <Navbar/> */}
-      <Example />
-      {/* <Card /> */}
-      {/* <Card2/> */}
-      {/* <Card3/> */}
-      {/* <Card4/> */}
+      <data.Provider value={name}>
+        <data1.Provider value={Age}>
+          <Com_A />
+        </data1.Provider>
+      </data.Provider>
     </>
   )
 }
 
 export default App;
+export { data, data1 }
