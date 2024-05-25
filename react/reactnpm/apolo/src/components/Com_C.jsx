@@ -2,6 +2,7 @@ import React from 'react'
 import { data, data1 } from '../App'
 import { useContext } from 'react'
 
+
 const Com_C = () => {
     const FirstName = useContext(data)
     const Age = useContext(data1)
@@ -12,14 +13,14 @@ const Com_C = () => {
             {FirstName}
             {Age}
 
-            {/* <data.provder>
+            <data.Consumer>
                 {
                     (name) => {
                         return (
                             <data1.Consumer>{
                                 (Age) => {
                                     return (
-                                        <span className="bg-red-500">{name}</span>
+                                        <span className="bg-red-500"><br />{name} {Age}</span>
                                     )
                                 }
                             }
@@ -27,7 +28,7 @@ const Com_C = () => {
                         )
                     }
                 }
-            </data.provder> */}
+            </data.Consumer>
             
         </div>
     )
