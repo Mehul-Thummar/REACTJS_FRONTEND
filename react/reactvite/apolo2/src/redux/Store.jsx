@@ -7,3 +7,4 @@ const Store = createStore(CakeReducer)
 
 
 export default Store
+
