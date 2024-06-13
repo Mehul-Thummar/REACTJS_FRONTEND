@@ -23,9 +23,8 @@ const Navbar = () => {
                         <div className='flex justify-center items-center'>
                             <ul className='flex justify-center items-center'>
                                 <li><NavLink className='px-5 text-xl font-bold hover:text-white' to="/">Home<i class="fa-solid fa-angle-down"></i></NavLink></li>
-                                <li><NavLink className='px-5 text-xl font-bold hover:text-white' to="/Shop">Axios<i class="fa-solid fa-angle-down"></i></NavLink></li>
-                                <li><NavLink className='px-5 text-xl font-bold hover:text-white' to="/Page">Page<i class="fa-solid fa-angle-down"></i></NavLink></li>
-                                <li><NavLink className='px-5 text-xl font-bold hover:text-white' to="/Blog">Blog<i class="fa-solid fa-angle-down"></i></NavLink></li>
+                                <li><NavLink className='px-5 text-xl font-bold hover:text-white' to="/Axios">Axios<i class="fa-solid fa-angle-down"></i></NavLink></li>
+                                <li><NavLink className='px-5 text-xl font-bold hover:text-white' to="/About">About<i class="fa-solid fa-angle-down"></i></NavLink></li>
                             </ul>
                             <div className='flex items-end px-5 hover:text-white'>
                                 <NavLink className='text-xl font-bold' to="/Contact">Contact</NavLink>

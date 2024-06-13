@@ -1,154 +1,143 @@
 import React from 'react'
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
-import { NavLink } from 'react-router-dom'
+import { FaUserEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 
 const Crud_database = () => {
+
+    const [data, setData] = useState([])
+
+    const loardUsers = async () => {
+        const res = await axios.get('http://localhost:3000/users')
+        setData(res.data)
+        console.log(res.data);
+    }
+
+    useEffect(() => {
+        loardUsers();
+    }, [])
+
+
+
     return (
         <div>
-            <div className='flex justify-center h-screen w-screen'>
-                <div>
-                    <h1 className='text-center font-semibold p-4 text-4xl '>CRUD Database</h1>
-                    <div className=''>
+            <section className="mx-auto w-full max-w-7xl px-4 py-4 mt-8">
+                <div className="flex flex-col space-y-4  md:flex-row md:items-center md:justify-between md:space-y-0">
+                    <div>
+                        <h1 className="text-lg font-semibold">Users</h1>
+                        <p className="mt-1 text-sm text-gray-700">
+                            This is a list of all Users. You can add new Users, edit or delete existing
+                            ones.
+                        </p>
+                    </div>
+                    <input
+                        className="flex h-10 w-[250px] rounded-md bg-gray-200 px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                        type="text"
+                        placeholder="Serach Users"
+                    ></input>
+                    <div>
+                        <NavLink to="/Add">
+                            <button
+                                type="button"
+                                className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+                                Add new Users
+                            </button>
+                        </NavLink>
+                    </div>
+                </div>
+                <div className="mt-6 flex flex-col">
+                    <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                            <div className="overflow-hidden border border-gray-200 md:rounded-lg">
+                                <table className="min-w-full divide-y divide-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700"><span>User</span></th>
+                                            <th scope="col" className="px-12 py-3.5 text-left text-sm font-normal text-gray-700">Proffesion</th>
+                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Age</th>
+                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Role</th>
+                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Mobile No</th>
+                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Edit</th>
+                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-gray-200 bg-white">
+                                        {data.map((person) => (
+                                            <tr key={person.name}>
+                                                <td className="whitespace-nowrap px-4 py-4">
+                                                    <div className="flex items-center">
+                                                        <div className="h-10 w-10 flex-shrink-0">
+                                                            <img
+                                                                className="h-10 w-10 rounded-full object-cover"
+                                                                src={person.image}
+                                                                alt=""
+                                                            />
+                                                        </div>
+                                                        <div className="ml-4">
+                                                            <div className="text-sm font-medium text-gray-900">{person.name}</div>
+                                                            <div className="text-sm text-gray-700">{person.email}</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td className="whitespace-nowrap px-12 py-4">
+                                                    <div className="text-sm text-gray-900 ">{person.title}</div>
+                                                    <div className="text-sm text-gray-700">{person.department}</div>
+                                                </td>
+                                                <td className="whitespace-nowrap px-4 py-4">
+                                                    <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                                                        Active
+                                                    </span>
+                                                </td>
+                                                <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
+                                                    {person.role}
+                                                </td>
+                                                <td className="whitespace-nowrap px-4 py-4 text-left text-sm font-medium">
+                                                    <a href="#" className="text-gray-700">
 
-                        {/* *************** Row - Head *************** */}
-                        <div className='border-y-[2px] w-screen mb-3'></div>
-                        <div className='flex justify-around '>
-                            <h1 className='     font-bold '>ID</h1>
-                            <h1 className='w-32 font-bold '>First</h1>
-                            <h1 className='w-32 font-bold '>Last</h1>
-                            <h1 className='w-32 font-bold '>Email</h1>
-                            <h1 className='w-32 font-bold '>Phone</h1>
-                            <h1 className='w-40 font-bold '>Location</h1>
-                            <h1 className='w-32 font-bold '>Hobby</h1>
-                            <h1 className='w-32 font-bold '>Actions</h1>
-                        </div>
-
-                        {/* *************** Row - 1 *************** */}
-                        <div className='border-y-[2px] w-screen my-3'></div>
-                        <div className='flex justify-around '>
-                            <h1 className='      font-bold'>35</h1>
-                            <h1 className=' w-32 '>Jane</h1>
-                            <h1 className=' w-32 '>Smith</h1>
-                            <h1 className=' w-32 '>js@gmail.com</h1>
-                            <h1 className=' w-32 '>503-555-5555</h1>
-                            <h1 className=' w-40 '>Portland, Oregeon</h1>
-                            <h1 className=' w-32 '>Photography</h1>
-                            <div className='flex space-x-3 w-32'>
-                                <NavLink to="/Edit">
-                                    <button className='bg-yellow-400 hover:bg-red-400 p-2 rounded'>Edit</button>
-                                </NavLink>
-                                <NavLink to="/Add">
-                                    <button className='hover:bg-green-400 bg-red-700 p-2 rounded text-white'>Del</button>
-                                </NavLink>
-
+                                                    </a>
+                                                </td>
+                                                <td className="whitespace-nowrap px-4 py-4 text-center text-2xl font-medium">
+                                                    <NavLink to="/Edit" className="text-gray-700">
+                                                        <FaUserEdit />
+                                                    </NavLink>
+                                                </td>
+                                                <td className="whitespace-nowrap px-4 py-4 text-center text-2xl font-medium">
+                                                    <NavLink to="/Delete" className="text-gray-700">
+                                                        <MdDelete />
+                                                    </NavLink>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>
-
-                        {/* *************** Row - 2 *************** */}
-                        <div className='border-y-[2px] w-screen my-3'></div>
-                        <div className='flex justify-around '>
-                            <h1 className='      font-bold'>36</h1>
-                            <h1 className=' w-32 '>Tristan</h1>
-                            <h1 className=' w-32 '>Rodriguez</h1>
-                            <h1 className=' w-32 '>tr@gmail.com</h1>
-                            <h1 className=' w-32 '>201-555-5555</h1>
-                            <h1 className=' w-40 '>New York, New York</h1>
-                            <h1 className=' w-32 '></h1>
-                            <div className='flex space-x-3 w-32'>
-                                <NavLink to="/Edit">
-                                    <button className='bg-yellow-400 hover:bg-red-400 p-2 rounded'>Edit</button>
-                                </NavLink>
-                                <NavLink to="/Add">
-                                    <button className='hover:bg-green-400 bg-red-700 p-2 rounded text-white'>Del</button>
-                                </NavLink>
-                            </div>
-                        </div>
-
-                        <div className='mt-6'>
-                            <button type='button' className='text-white bg-blue-700 hover:bg-blue-800 rounded px-5 py-2.5 me-2 mb-2'>Downloard CSV</button>
-                            <NavLink to="/Add">
-                                <button type="button" className=' focus:outline-none text-white bg-[#2ea22e] hover:bg-green-800 focus:ring-4 focus:ring-green-300 rounded px-5 py-2.5 me-2 mb-2 '>Add Item</button>
-                            </NavLink>
-
-                        </div>
-
-
-
-                        <div className='page'>
-                            <Stack spacing={2}>
-                                <Pagination count={5} />
-                            </Stack>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div className="flex items-center justify-center pt-6">
+                    <a href="#" className="mx-1 cursor-not-allowed text-sm font-semibold text-gray-900">
+                        <span className="hidden lg:block">&larr; Previous</span>
+                        <span className="block lg:hidden">&larr;</span>
+                    </a>
+                    <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">1</a>
+                    <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">2</a>
+                    <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">3</a>
+                    <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">4</a>
+                    <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">5</a>
+                    <a href="#" className="mx-2 text-sm font-semibold text-gray-900">
+                        <span className="hidden lg:block">Next &rarr;</span>
+                        <span className="block lg:hidden">&rarr;</span></a>
+                </div>
+            </section>
+
+
+
         </div >
     )
 }
 
 export default Crud_database
 
-{/* <table>
-    <thead>
-        <tr >
-            <th className='font-bold w-20'>ID</th>
-            <th className='font-bold w-20'>First</th>
-            <th className='font-bold '>Last</th>
-            <th className='font-bold '>Email</th>
-            <th className='font-bold '>Phone</th>
-            <th className='font-bold '>Location</th>
-            <th className='font-bold '>Hobby</th>
-            <th className='font-bold '>Action</th>
-        </tr>
-    </thead>
-</table> */}
-
-// {/* *************** Row - 3 *************** */}
-// <div className='border-y-[2px] w-screen my-3'></div>
-// <div className='flex justify-around '>
-//     <h1 className='      font-bold'>37</h1>
-//     <h1 className=' w-32 '>Andrea</h1>
-//     <h1 className=' w-32 '>Jones</h1>
-//     <h1 className=' w-32 '>aj@gmail.com</h1>
-//     <h1 className=' w-32 '>503-555-5555</h1>
-//     <h1 className=' w-40 '>Portland, Oregeon</h1>
-//     <h1 className=' w-32 '>Programming</h1>
-//     <div className='flex space-x-3 w-32'>
-//         <button className='bg-yellow-400 hover:bg-red-400 p-2 rounded'>Edit</button>
-//         <button className='hover:bg-green-400 bg-red-700 p-2 rounded text-white'>Del</button>
-//     </div>
-// </div>
-
-// {/* *************** Row - 4 *************** */}
-// <div className='border-y-[2px] w-screen my-3'></div>
-// <div className='flex justify-around '>
-//     <h1 className='      font-bold'>38</h1>
-//     <h1 className=' w-32 '>Elliott</h1>
-//     <h1 className=' w-32 '>Richardson</h1>
-//     <h1 className=' w-32 '>er@gmail.com</h1>
-//     <h1 className=' w-32 '></h1>
-//     <h1 className=' w-40 '>Boise, Idaho</h1>
-//     <h1 className=' w-32 '></h1>
-//     <div className='flex space-x-3 w-32'>
-//         <button className='bg-yellow-400 hover:bg-red-400 p-2 rounded'>Edit</button>
-//         <button className='hover:bg-green-400 bg-red-700 p-2 rounded text-white'>Del</button>
-//     </div>
-// </div>
-
-// {/* *************** Row - 5 *************** */}
-// <div className='border-y-[2px] w-screen my-3'></div>
-// <div className='flex justify-around '>
-//     <h1 className='      font-bold'>39</h1>
-//     <h1 className=' w-32 '>June</h1>
-//     <h1 className=' w-32 '>Bug</h1>
-//     <h1 className=' w-32 '>jb@gmail.com</h1>
-//     <h1 className=' w-32 '></h1>
-//     <h1 className=' w-40 '></h1>
-//     <h1 className=' w-32 '>Cooking</h1>
-//     <div className='flex space-x-3 w-32'>
-//         <button className='bg-yellow-400 hover:bg-red-400 p-2 rounded'>Edit</button>
-//         <button className='hover:bg-green-400 bg-red-700 p-2 rounded text-white'>Del</button>
-//     </div>
-// </div>
