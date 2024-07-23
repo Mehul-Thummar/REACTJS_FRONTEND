@@ -21,9 +21,9 @@ function App() {
             <Route path="/Axios" element={<Axios />}></Route>
             <Route path="/About" element={<About />}></Route>
             <Route path="/Contact" element={<Contact />}></Route>
-            <Route path="/Edit" element={<Edit />}></Route>
+            <Route path="/Edit/:id" element={<Edit />}></Route>
             <Route path="/Add" element={<Add />}></Route>
-            <Route path="/*" element={<Error404 />}></Route>
+            <Route path="/" element={<Error404 />}></Route>
 
           </Routes>
         </BrowserRouter>

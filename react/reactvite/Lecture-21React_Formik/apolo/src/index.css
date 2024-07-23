@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 bg-purple-600 text-white border-2 border-solid border-black
+  }
+
+  .btn2 {
+    @apply border border-black px-5 py-1 bg-green-300 font-bold
+  }
+
+  .title {
+    @apply p-4 text-white bg-orange-400 font-semibold text-4xl text-center
+  }
+}

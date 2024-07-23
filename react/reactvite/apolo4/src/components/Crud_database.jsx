@@ -10,16 +10,25 @@ const Crud_database = () => {
 
     const [data, setData] = useState([])
 
-    const loardUsers = async () => {
+    const loadUsers = async () => {
         const res = await axios.get('http://localhost:3000/users')
         setData(res.data)
         console.log(res.data);
     }
 
     useEffect(() => {
-        loardUsers();
+        loadUsers();
     }, [])
 
+    const DeleteUser = (id) => {
+        axios.delete(`http://localhost:3000/users/${id}`)
+            .then(() => {
+                loadUsers()
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
 
 
     return (
@@ -58,7 +67,6 @@ const Crud_database = () => {
                                             <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700"><span>User</span></th>
                                             <th scope="col" className="px-12 py-3.5 text-left text-sm font-normal text-gray-700">Proffesion</th>
                                             <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Age</th>
-                                            <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Role</th>
                                             <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Mobile No</th>
                                             <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Edit</th>
                                             <th scope="col" className="px-4 py-3.5 text-left text-sm font-normal text-gray-700">Delete</th>
@@ -69,7 +77,7 @@ const Crud_database = () => {
                                             <tr key={person.name}>
                                                 <td className="whitespace-nowrap px-4 py-4">
                                                     <div className="flex items-center">
-                                                        <div className="h-10 w-10 flex-shrink-0">
+                                                        <div className="h-10 w-10 flex-shrink-0 hover:scale-150">
                                                             <img
                                                                 className="h-10 w-10 rounded-full object-cover"
                                                                 src={person.image}
@@ -77,37 +85,33 @@ const Crud_database = () => {
                                                             />
                                                         </div>
                                                         <div className="ml-4">
-                                                            <div className="text-sm font-medium text-gray-900">{person.name}</div>
+                                                            <div className="text-sm font-medium text-gray-900">{person.username}</div>
                                                             <div className="text-sm text-gray-700">{person.email}</div>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td className="whitespace-nowrap px-12 py-4">
-                                                    <div className="text-sm text-gray-900 ">{person.title}</div>
-                                                    <div className="text-sm text-gray-700">{person.department}</div>
+                                                    <div className="text-sm text-gray-900 ">{person.proffesion}</div>
                                                 </td>
                                                 <td className="whitespace-nowrap px-4 py-4">
                                                     <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                                                        Active
+                                                        {person.age}
                                                     </span>
-                                                </td>
-                                                <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
-                                                    {person.role}
                                                 </td>
                                                 <td className="whitespace-nowrap px-4 py-4 text-left text-sm font-medium">
                                                     <a href="#" className="text-gray-700">
-
+                                                        {person.number}
                                                     </a>
                                                 </td>
-                                                <td className="whitespace-nowrap px-4 py-4 text-center text-2xl font-medium">
-                                                    <NavLink to="/Edit" className="text-gray-700">
+                                                <td className="whitespace-nowrap px-4 py-4 text-left text-2xl font-medium">
+                                                    <NavLink to={`/edit/${person.id}`} className="text-gray-700">
                                                         <FaUserEdit />
                                                     </NavLink>
                                                 </td>
                                                 <td className="whitespace-nowrap px-4 py-4 text-center text-2xl font-medium">
-                                                    <NavLink to="/Delete" className="text-gray-700">
+                                                    <button onClick={() => DeleteUser(person.id)}>
                                                         <MdDelete />
-                                                    </NavLink>
+                                                    </button>
                                                 </td>
                                             </tr>
                                         ))}
